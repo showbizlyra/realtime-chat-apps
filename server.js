@@ -45,10 +45,10 @@ app.post("/authenticate", (req, res) => {
 });
 
 var port = process.env.PORT || 3001;
-app.listen(PORT, err => {
+app.listen(port, err => {
   if (err) {
     console.error(err);
   } else {
-    console.log(`Running on port ${PORT}`);
+    console.log(`Running on port ${port}`);
   }
 });

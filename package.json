@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@pusher/chatkit": "^0.7.18",
     "@pusher/chatkit-client": "^1.4.1",
     "@pusher/chatkit-server": "^1.1.0",
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "pusher-chatkit-server": "^0.12.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
@@ -22,5 +20,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "Realtime chat apps using ReactJs, ExpressJs, and NodeJs",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showbizlyra/realtime-chat-apps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/showbizlyra/realtime-chat-apps/issues"
+  },
+  "homepage": "https://github.com/showbizlyra/realtime-chat-apps#readme"
 }

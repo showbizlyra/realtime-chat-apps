@@ -44,7 +44,7 @@ app.post("/authenticate", (req, res) => {
   res.status(authData.status).send(authData.body);
 });
 
-var port = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, err => {
   if (err) {
     console.error(err);

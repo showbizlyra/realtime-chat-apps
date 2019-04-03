@@ -15,6 +15,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 app.post("/users", (req, res) => {
   const { username } = req.body;
 

@@ -19,6 +19,11 @@ app.get("/hello", (req, res) => {
   res.send("Hello World");
 });
 
+// All remaining requests return the React app, so it can handle routing.
+app.get("*", function(request, response) {
+  response.sendFile(path.resolve(__dirname, "../build", "index.html"));
+});
+
 app.post("/users", (req, res) => {
   const { username } = req.body;
 
